@@ -1,7 +1,7 @@
 var courseList = $("#courses");
 
 $("button").click(function () {
-  $.get("http://starlord.hackerearth.com/recipe", function (data) {
+  $.get("https://codingninjas.in/api/v3/courses", function (data) {
     let courses = data.data.courses;
     for (let course of courses) {
       courseList.append(`
@@ -9,6 +9,7 @@ $("button").click(function () {
                     <img src="${course.preview_image_url}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <p class="card-text">${course.name}</p>
+
                         <p class="card-text text-right">${course.level}</p>
                     </div>
                 </div>
