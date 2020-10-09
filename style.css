@@ -1,0 +1,13 @@
+#get-recipe {
+  background-color: aliceblue;
+  margin-top: 10%;
+  padding: 20px;
+}
+
+#button {
+  margin-top: 30px;
+  padding: 10px 50px;
+}
+.body {
+  background-color: salmon;
+}
